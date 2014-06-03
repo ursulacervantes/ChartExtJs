@@ -1,0 +1,88 @@
+{
+    "type": "Ext.chart.Chart",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "animate": [
+            "true"
+        ],
+        "designer|userClassName": "LineChart",
+        "height": 250,
+        "insetPadding": 20,
+        "width": 400
+    },
+    "designerId": "c437fb03-44f8-4e70-83ba-0ef7a144d7db",
+    "isBuiltIn": true,
+    "iconCls": "icon-line-chart",
+    "autoName": "LineChart",
+    "cn": [
+        {
+            "type": "Ext.chart.Legend",
+            "reference": {
+                "name": "legend",
+                "type": "object"
+            },
+            "codeClass": null,
+            "designerId": "221d25ea-9188-4083-ad05-7553d2b9c94e"
+        },
+        {
+            "type": "Ext.chart.axis.Numeric",
+            "reference": {
+                "name": "axes",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fields": [
+                    "views",
+                    "visits",
+                    "users"
+                ],
+                "grid": [
+                    "true"
+                ],
+                "maximum": 200,
+                "minimum": 0,
+                "title": "Developers"
+            },
+            "designerId": "3e632519-d665-4cb7-b1e2-ec4934c1851b"
+        },
+        {
+            "type": "Ext.chart.axis.Time",
+            "reference": {
+                "name": "axes",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "aggregateOp": "sum",
+                "constrain": true,
+                "dateFormat": "M d",
+                "fields": [
+                    "date"
+                ],
+                "fromDate": 1388552400000,
+                "groupBy": "year,month,day",
+                "position": "bottom",
+                "title": "Time Axis",
+                "toDate": 1404190800000
+            },
+            "designerId": "7dc60132-9d83-4a8b-96f9-a5a7f7a098a3",
+            "customConfigs": [
+                {
+                    "group": "(Custom Properties)",
+                    "name": "groupBy",
+                    "type": "string"
+                },
+                {
+                    "group": "(Custom Properties)",
+                    "name": "aggregateOp",
+                    "type": "string"
+                }
+            ]
+        }
+    ]
+}
